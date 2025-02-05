@@ -6,5 +6,3 @@ export $(infisical export --domain "$VAULT_URL" --projectId "$VAULT_PROJECT_ID" 
 echo "✅ Secrets loaded."
 
 echo "🚀 Starting Application..."
-
-exec docker-entrypoint.sh node
