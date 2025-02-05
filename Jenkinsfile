@@ -41,9 +41,5 @@ pipeline {
             sh 'docker image prune -a -f'
             sh 'docker logout'
         }
-
-        success {
-            sh "docker image rm ${env.IMAGE_NAME}"
-        }
     }
 }
