@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "${env.REGISTRY_URL}/${env.REGISTRY_ORG}/nestjs:20"
+        IMAGE_NAME = "${env.REGISTRY_ORG}/nestjs:20"
     }
 
     stages {
