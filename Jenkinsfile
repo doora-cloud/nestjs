@@ -8,10 +8,10 @@ pipeline {
     }
 
     environment {
-        REGISTRY_ORG = 'dooracloud'
-        REGISTRY_CRED_ID = 'docker-doora'
+//        REGISTRY_ORG = 'doora'
+//        REGISTRY_CRED_ID = 'doora-registry'
 
-        IMAGE_NAME = "${env.REGISTRY_ORG}/nestjs:20"
+        IMAGE_NAME = "${env.REGISTRY_URL}/${env.REGISTRY_ORG}/nestjs:20"
     }
 
     stages {
