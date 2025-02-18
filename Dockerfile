@@ -7,4 +7,8 @@ RUN apk add --no-cache bash curl && curl -1sLf \
 
 RUN apk --no-cache add infisical
 
-RUN npm install -g corepack@latest && corepack enable
+RUN npm install -g corepack@latest
+
+RUN corepack enable
+
+RUN corepack prepare yarn@stable --activate
